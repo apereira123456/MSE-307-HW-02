@@ -30,5 +30,8 @@ plt.show()
 t = 24 * 3600
 D = - lr.coef_[0,0] ** (-1) / (4 * t)
 a = np.exp(lr.intercept_[0]) * np.sqrt(4 * np.pi * D * t)
+
+print(lr.coef_[0,0])
+
 print(D,'cm^2/s')
 print(a,'cm')
